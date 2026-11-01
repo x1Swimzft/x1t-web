@@ -56,7 +56,7 @@ export default function RootLayout({
                   name: "FPS Patcher Studio",
                   applicationCategory: "MultimediaApplication",
                   operatingSystem: "Windows 10, Windows 11",
-                  softwareVersion: "1.0.0",
+                  softwareVersion: "1.2.0",
                   offers: {
                     "@type": "Offer",
                     price: "0",

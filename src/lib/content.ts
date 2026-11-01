@@ -3,26 +3,26 @@ import type { Lang } from "./theme";
 export const RELEASES = {
   fps: {
     name: "FPS Patcher Studio",
-    version: "1.0.0",
+    version: "1.2.0",
     repo: "https://github.com/x1Swimzft/FPS-Patcher-Studio",
     releasePage:
-      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/tag/v1.0.0",
+      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/tag/v1.2.0",
     installer: {
-      file: "FPSPatcherStudio-v1.0.0-Setup.exe",
-      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v1.0.0/FPSPatcherStudio-v1.0.0-Setup.exe",
+      file: "FPSPatcherStudio-v1.2.0-Setup.exe",
+      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v1.2.0/FPSPatcherStudio-v1.2.0-Setup.exe",
       size: "84 MB",
-      bytes: 88_080_827,
-      sha: "2eb8b68a04263838e85b07f616bd337154a9901871bb57281ef55a328a8e7445",
+      bytes: 88_094_148,
+      sha: "98f840d64654f5ae824a70e21df5c91578f963edafd1684f3421d425a4c90973",
     },
     portable: {
-      file: "FPSPatcherStudio-v1.0.0-win64.zip",
-      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v1.0.0/FPSPatcherStudio-v1.0.0-win64.zip",
+      file: "FPSPatcherStudio-v1.2.0-win64.zip",
+      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v1.2.0/FPSPatcherStudio-v1.2.0-win64.zip",
       size: "117 MB",
-      bytes: 122_910_804,
-      sha: "cca969aecd9810c11d7ba530b7e3c50721661e70b9cec619ae3a3a4208e3e5b9",
+      bytes: 122_931_332,
+      sha: "ae5032e1431fdcd68b37d78cfb870da234919b25e4c21275da73a41523c44c7f",
     },
     checksums:
-      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v1.0.0/FPSPatcherStudio-v1.0.0.sha256",
+      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v1.2.0/FPSPatcherStudio-v1.2.0.sha256",
   },
   ud: {
     name: "Universal Downloader",
@@ -60,7 +60,7 @@ const en = {
     cta: "Download",
   },
   hero: {
-    eyebrow: "v1.0.0 · Windows 10/11 · Local-first",
+    eyebrow: "FPS v1.2.0 · Downloader v1.0.0 · Windows 10/11",
     title: "X1T",
     subtitle:
       "Two desktop tools for people who care about every frame and every file. Patch container timing without re-encoding. Pull media from 15 sites into one local queue.",
@@ -113,7 +113,7 @@ const en = {
     },
   ],
   fps: {
-    badge: "FPS Patcher Studio · v1.0.0",
+    badge: "FPS Patcher Studio · v1.2.0",
     title: "Fix the timing, not the pixels.",
     lede: "FPS Patcher Studio rewrites MP4 and MOV container headers at the atom level. The video and audio samples stay untouched, so the file is re-timed without a second encode.",
     featuresTitle: "What it does",
@@ -133,6 +133,14 @@ const en = {
       {
         title: "Batch queue",
         desc: "Drop multiple clips, override timescale or preset per item, and patch only what you select.",
+      },
+      {
+        title: "Bitrate preview and target",
+        desc: "Queue rows and the Inspector show the source and estimated output bitrate. The cap is adjustable from 1 to 24 Mbps.",
+      },
+      {
+        title: "Startup update check",
+        desc: "When a newer release exists, the app shows its notes and asks before downloading.",
       },
       {
         title: "Forensic inspector",
@@ -304,7 +312,7 @@ const en = {
     openLocalApp: "Open local app",
   },
   downloads: {
-    eyebrow: "Official v1.0.0 releases",
+    eyebrow: "Official Windows releases",
     title: "Download for Windows.",
     lede: "Windows 10/11 x64. Installer or portable. Both builds are unsigned, so verify the SHA-256 before you run them.",
     unsignedTitle: "Unsigned builds, by design.",
@@ -332,7 +340,7 @@ const en = {
     items: [
       {
         q: "Why does Windows warn me before running the installer?",
-        a: "The v1.0.0 builds are not Authenticode-signed, so SmartScreen cannot verify the publisher. Check the SHA-256 against the release checksum before you run the file. Signed builds may arrive later.",
+        a: "The current Windows builds are not Authenticode-signed, so SmartScreen cannot verify the publisher. Check the SHA-256 against the release checksum before you run the file. Signed builds may arrive later.",
       },
       {
         q: "Does FPS Patcher re-encode my video?",
@@ -374,7 +382,7 @@ const th: typeof en = {
     cta: "ดาวน์โหลด",
   },
   hero: {
-    eyebrow: "v1.0.0 · Windows 10/11 · ทำงานบนเครื่อง",
+    eyebrow: "FPS v1.2.0 · Downloader v1.0.0 · Windows 10/11",
     title: "X1T",
     subtitle:
       "สองเครื่องมือเดสก์ท็อปสำหรับคนที่ใส่ใจทุกเฟรมและทุกไฟล์ แพตช์ไทม์มิ่งคอนเทนเนอร์โดยไม่ต้องเรนเดอร์ใหม่ และดาวน์โหลดสื่อจาก 15 แพลตฟอร์มเข้าคิวเดียวบนเครื่องคุณ",
@@ -427,7 +435,7 @@ const th: typeof en = {
     },
   ],
   fps: {
-    badge: "FPS Patcher Studio · v1.0.0",
+    badge: "FPS Patcher Studio · v1.2.0",
     title: "แก้ไทม์มิ่ง ไม่แตะพิกเซล",
     lede: "FPS Patcher Studio เขียนเฮดเดอร์คอนเทนเนอร์ MP4 และ MOV ใหม่ที่ระดับ atom ข้อมูลวิดีโอและเสียงยังคงเดิม จึงปรับไทม์มิ่งได้โดยไม่ต้องเข้ารหัสซ้ำ",
     featuresTitle: "ความสามารถหลัก",
@@ -447,6 +455,14 @@ const th: typeof en = {
       {
         title: "คิวแบบแบตช์",
         desc: "ลากหลายคลิป ตั้ง timescale หรือ preset รายไฟล์ และเลือกแพตช์เฉพาะรายการที่ต้องการ",
+      },
+      {
+        title: "ดูบิตเรตและตั้งเป้า",
+        desc: "แถวในคิวและ Inspector แสดงบิตเรตต้นฉบับและค่าประมาณหลังแพตช์ ปรับเป้าได้ 1-24 Mbps",
+      },
+      {
+        title: "เช็กอัปเดตตอนเปิดแอป",
+        desc: "ถ้ามีเวอร์ชันใหม่ แอปจะแสดงบันทึกการเปลี่ยนแปลงและถามก่อนดาวน์โหลด",
       },
       {
         title: "Forensic inspector",
@@ -618,7 +634,7 @@ const th: typeof en = {
     openLocalApp: "เปิดแอปบนเครื่อง",
   },
   downloads: {
-    eyebrow: "release ทางการ v1.0.0",
+    eyebrow: "release ทางการสำหรับ Windows",
     title: "ดาวน์โหลดสำหรับ Windows",
     lede: "Windows 10/11 x64 เลือก installer หรือ portable ทั้งสองไฟล์ยังไม่ได้เซ็นชื่อ กรุณาตรวจ SHA-256 ก่อนเปิดใช้งาน",
     unsignedTitle: "ไฟล์ยังไม่ได้เซ็นชื่อ",
@@ -646,7 +662,7 @@ const th: typeof en = {
     items: [
       {
         q: "ทำไม Windows ขึ้นเตือนก่อนรัน installer?",
-        a: "ไฟล์ v1.0.0 ยังไม่ได้เซ็นชื่อ Authenticode ทำให้ SmartScreen ตรวจสอบผู้เผยแพร่ไม่ได้ ให้ตรวจ SHA-256 กับไฟล์ checksum ของ release ก่อนรัน",
+        a: "ไฟล์ build ปัจจุบันยังไม่ได้เซ็นชื่อ Authenticode ทำให้ SmartScreen ตรวจสอบผู้เผยแพร่ไม่ได้ ให้ตรวจ SHA-256 กับไฟล์ checksum ของ release ก่อนรัน",
       },
       {
         q: "FPS Patcher เข้ารหัสวิดีโอใหม่ไหม?",
