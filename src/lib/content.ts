@@ -3,26 +3,26 @@ import type { Lang } from "./theme";
 export const RELEASES = {
   fps: {
     name: "FPS Patcher Studio",
-    version: "1.2.0",
+    version: "2.0.0",
     repo: "https://github.com/x1Swimzft/FPS-Patcher-Studio",
     releasePage:
-      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/tag/v1.2.0",
+      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/tag/v2.0.0",
     installer: {
-      file: "FPSPatcherStudio-v1.2.0-Setup.exe",
-      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v1.2.0/FPSPatcherStudio-v1.2.0-Setup.exe",
+      file: "FPSPatcherStudio-v2.0.0-Setup.exe",
+      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v2.0.0/FPSPatcherStudio-v2.0.0-Setup.exe",
       size: "84 MB",
-      bytes: 88_094_148,
-      sha: "98f840d64654f5ae824a70e21df5c91578f963edafd1684f3421d425a4c90973",
+      bytes: 88_394_638,
+      sha: "bb8b43f81c92e7a97de3c4aaea0022e115c399177a7b7afa853b01691bddf323",
     },
     portable: {
-      file: "FPSPatcherStudio-v1.2.0-win64.zip",
-      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v1.2.0/FPSPatcherStudio-v1.2.0-win64.zip",
-      size: "117 MB",
-      bytes: 122_931_332,
-      sha: "ae5032e1431fdcd68b37d78cfb870da234919b25e4c21275da73a41523c44c7f",
+      file: "FPSPatcherStudio-v2.0.0-win64.zip",
+      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v2.0.0/FPSPatcherStudio-v2.0.0-win64.zip",
+      size: "117.5 MB",
+      bytes: 123_245_290,
+      sha: "3a39d43337f5616ee43ea848ff3fbe9df9d8819f2ac6da2b4ff2b8b7daedd124",
     },
     checksums:
-      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v1.2.0/FPSPatcherStudio-v1.2.0.sha256",
+      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v2.0.0/FPSPatcherStudio-v2.0.0.sha256",
   },
   ud: {
     name: "Universal Downloader",
@@ -60,7 +60,7 @@ const en = {
     cta: "Download",
   },
   hero: {
-    eyebrow: "FPS v1.2.0 · Downloader v1.0.0 · Windows 10/11",
+    eyebrow: "FPS v2.0.0 · Downloader v1.0.0 · Windows 10/11",
     title: "X1T",
     subtitle:
       "Two desktop tools for people who care about every frame and every file. Patch container timing without re-encoding. Pull media from 15 sites into one local queue.",
@@ -113,7 +113,7 @@ const en = {
     },
   ],
   fps: {
-    badge: "FPS Patcher Studio · v1.2.0",
+    badge: "FPS Patcher Studio · v2.0.0",
     title: "Fix the timing, not the pixels.",
     lede: "FPS Patcher Studio rewrites MP4 and MOV container headers at the atom level. The video and audio samples stay untouched, so the file is re-timed without a second encode.",
     featuresTitle: "What it does",
@@ -133,6 +133,14 @@ const en = {
       {
         title: "Batch queue",
         desc: "Drop multiple clips, override timescale or preset per item, and patch only what you select.",
+      },
+      {
+        title: "System tray and startup",
+        desc: "Close the window and keep patching; optionally launch with Windows and start in the tray.",
+      },
+      {
+        title: "Crimson Graphite UI",
+        desc: "Four Settings tabs, a hero drop state, and a light mode built alongside dark.",
       },
       {
         title: "Bitrate preview and target",
@@ -232,7 +240,7 @@ const en = {
     shotsTitle: "Inside the app",
     shots: [
       { id: "queue", label: "Batch queue", caption: "Queue with per-item overrides and verification state." },
-      { id: "settings", label: "Settings", caption: "X1T presets, watch folder, color guard, and shell integration." },
+      { id: "settings", label: "Settings", caption: "Four-tab Settings with Advanced sections for naming, visual, and lossy options." },
       { id: "main", label: "Empty state", caption: "Drop MP4 or MOV files, or add a folder." },
     ],
     cta: "Download FPS Patcher",
@@ -382,7 +390,7 @@ const th: typeof en = {
     cta: "ดาวน์โหลด",
   },
   hero: {
-    eyebrow: "FPS v1.2.0 · Downloader v1.0.0 · Windows 10/11",
+    eyebrow: "FPS v2.0.0 · Downloader v1.0.0 · Windows 10/11",
     title: "X1T",
     subtitle:
       "สองเครื่องมือเดสก์ท็อปสำหรับคนที่ใส่ใจทุกเฟรมและทุกไฟล์ แพตช์ไทม์มิ่งคอนเทนเนอร์โดยไม่ต้องเรนเดอร์ใหม่ และดาวน์โหลดสื่อจาก 15 แพลตฟอร์มเข้าคิวเดียวบนเครื่องคุณ",
@@ -435,7 +443,7 @@ const th: typeof en = {
     },
   ],
   fps: {
-    badge: "FPS Patcher Studio · v1.2.0",
+    badge: "FPS Patcher Studio · v2.0.0",
     title: "แก้ไทม์มิ่ง ไม่แตะพิกเซล",
     lede: "FPS Patcher Studio เขียนเฮดเดอร์คอนเทนเนอร์ MP4 และ MOV ใหม่ที่ระดับ atom ข้อมูลวิดีโอและเสียงยังคงเดิม จึงปรับไทม์มิ่งได้โดยไม่ต้องเข้ารหัสซ้ำ",
     featuresTitle: "ความสามารถหลัก",
@@ -455,6 +463,14 @@ const th: typeof en = {
       {
         title: "คิวแบบแบตช์",
         desc: "ลากหลายคลิป ตั้ง timescale หรือ preset รายไฟล์ และเลือกแพตช์เฉพาะรายการที่ต้องการ",
+      },
+      {
+        title: "System Tray และ Startup",
+        desc: "ปิดหน้าต่างแล้วแพตช์ต่อ; เปิดพร้อม Windows และเริ่มแบบซ่อนใน tray ได้",
+      },
+      {
+        title: "ดีไซน์ Crimson Graphite",
+        desc: "Settings 4 แท็บ, หน้า drop แบบ hero และ light mode ที่ทำมาคู่กับ dark",
       },
       {
         title: "ดูบิตเรตและตั้งเป้า",
@@ -554,7 +570,7 @@ const th: typeof en = {
     shotsTitle: "ภายในแอป",
     shots: [
       { id: "queue", label: "คิวแบตช์", caption: "คิวพร้อมตัวเลือกต่อไฟล์และสถานะการตรวจสอบ" },
-      { id: "settings", label: "ตั้งค่า", caption: "พรีเซ็ต X1T, watch folder, color guard และ shell integration" },
+      { id: "settings", label: "ตั้งค่า", caption: "Settings 4 แท็บ พร้อม Advanced สำหรับการตั้งชื่อ หน้าตา และตัวเลือก lossy" },
       { id: "main", label: "หน้าแรก", caption: "ลากไฟล์ MP4 หรือ MOV หรือเพิ่มโฟลเดอร์" },
     ],
     cta: "ดาวน์โหลด FPS Patcher",
