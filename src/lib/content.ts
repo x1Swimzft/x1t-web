@@ -331,6 +331,10 @@ const en = {
         a: "The current Windows builds are not Authenticode-signed, so SmartScreen cannot verify the publisher. Check the SHA-256 against the release checksum before you run the file. Signed builds may arrive later.",
       },
       {
+        q: "Why does auto-update fail when upgrading from v2.0.1–v2.0.3?",
+        a: "Those builds only accept Authenticode-signed installers. The current builds are unsigned, so install v2.0.4 manually once. If the update was already downloaded, run FPSPatcherStudio-v2.0.4-Setup.exe from %TEMP%\\FPSPatcherStudioUpdate. Later updates use the published SHA-256 checksum.",
+      },
+      {
         q: "Does FPS Patcher re-encode my video?",
         a: "X1T Remux copies an existing H.264 bitstream without re-encoding video. X1T 60fps and X1T 1080p are lossy H.264/AAC re-encodes for AV1/HEVC or arbitrary sources. The legacy X1T presets are container-only patches.",
       },
@@ -639,6 +643,10 @@ const th: typeof en = {
       {
         q: "ทำไม Windows ขึ้นเตือนก่อนรัน installer?",
         a: "ไฟล์ build ปัจจุบันยังไม่ได้เซ็นชื่อ Authenticode ทำให้ SmartScreen ตรวจสอบผู้เผยแพร่ไม่ได้ ให้ตรวจ SHA-256 กับไฟล์ checksum ของ release ก่อนรัน",
+      },
+      {
+        q: "ทำไมอัปเดตอัตโนมัติจาก v2.0.1–v2.0.3 ไม่สำเร็จ?",
+        a: "build เหล่านั้นยอมรับเฉพาะ installer ที่เซ็นชื่อ Authenticode; build ปัจจุบันยังไม่เซ็นชื่อ จึงต้องติดตั้ง v2.0.4 ด้วยมือหนึ่งครั้ง ถ้าดาวน์โหลดไว้แล้ว ให้รัน FPSPatcherStudio-v2.0.4-Setup.exe จาก %TEMP%\\FPSPatcherStudioUpdate หลังจากนั้นระบบจะตรวจ SHA-256 ของ release ให้",
       },
       {
         q: "FPS Patcher เข้ารหัสวิดีโอใหม่ไหม?",
