@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   ),
   title: "X1T — FPS Patcher Studio & Universal Downloader",
   description:
-    "Two local-first Windows tools for creators: FPS Patcher Studio rewrites MP4/MOV container timing without re-encoding, and Universal Downloader pulls media from 15 sites into one queue.",
+    "Two local-first Windows tools for creators: FPS Patcher Studio rewrites MP4/MOV container timing and builds TikTok-ready MPEG-TS presets, and Universal Downloader pulls media from 15 sites into one queue.",
   icons: { icon: "/icon.svg" },
   openGraph: {
     title: "X1T — FPS Patcher Studio & Universal Downloader",
     description:
-      "Patch container timing without re-encoding. Download media from 15 sites. Both run on your PC.",
+      "Patch MP4/MOV container timing or build TikTok-ready MPEG-TS presets. Download media from 15 sites. Both run on your PC.",
     type: "website",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "X1T — FPS Patcher Studio & Universal Downloader",
     description:
-      "Patch container timing without re-encoding. Download media from 15 sites. Both run on your PC.",
+      "Patch MP4/MOV container timing or build TikTok-ready MPEG-TS presets. Download media from 15 sites. Both run on your PC.",
     images: ["/og.png"],
   },
 };
@@ -56,7 +56,7 @@ export default function RootLayout({
                   name: "FPS Patcher Studio",
                   applicationCategory: "MultimediaApplication",
                   operatingSystem: "Windows 10, Windows 11",
-                  softwareVersion: "2.0.1",
+                  softwareVersion: "2.0.4",
                   offers: {
                     "@type": "Offer",
                     price: "0",
