@@ -8,6 +8,7 @@ import {
   Download,
   ExternalLink,
   FileCheck2,
+  Info,
   ShieldCheck,
   Terminal,
 } from "lucide-react";
@@ -60,6 +61,18 @@ export function Downloads({ lang }: DownloadsProps) {
             </p>
             <p className="mt-1 max-w-[80ch] text-[12.5px] leading-relaxed text-[var(--text2)]">
               {copy.unsignedBody}
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-3 flex gap-3 rounded-[var(--r-card)] border border-[var(--border)] bg-[var(--surface)] p-5">
+          <Info className="mt-0.5 h-5 w-5 shrink-0 text-[var(--accent-light)]" />
+          <div>
+            <p className="text-[13.5px] font-semibold text-[var(--text)]">
+              {copy.updateNoteTitle}
+            </p>
+            <p className="mt-1 max-w-[80ch] text-[12.5px] leading-relaxed text-[var(--text2)]">
+              {copy.updateNote}
             </p>
           </div>
         </div>

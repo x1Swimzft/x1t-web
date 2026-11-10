@@ -316,6 +316,9 @@ const en = {
     unsignedTitle: "Unsigned builds, by design.",
     unsignedBody:
       "Windows SmartScreen may show “Windows protected your PC” on first run. That is expected for unsigned installers. Compare the file hash with the value on this page or the release checksum file before launching.",
+    updateNoteTitle: "Updating from v2.0.1–v2.0.3?",
+    updateNote:
+      "Those builds hard-disable the startup update toggle and require a signed installer. Install v2.1.0 manually once; from 2.0.4 onward, startup checks and SHA-256 updates work normally.",
     verifyTitle: "Verify before you run",
     verifyBody:
       "Open PowerShell in your Downloads folder, run Get-FileHash, and compare the output with the official hash.",
@@ -644,6 +647,9 @@ const th: typeof en = {
     unsignedTitle: "ไฟล์ยังไม่ได้เซ็นชื่อ",
     unsignedBody:
       "Windows SmartScreen อาจขึ้น “Windows protected your PC” ในการเปิดครั้งแรก ซึ่งเป็นเรื่องปกติของไฟล์ที่ยังไม่เซ็นชื่อ ให้เทียบค่าแฮชกับค่าบนหน้านี้หรือไฟล์ checksum ของ release ก่อนเปิดใช้งาน",
+    updateNoteTitle: "อัปเดตจาก v2.0.1–v2.0.3?",
+    updateNote:
+      "build เหล่านั้นปิดสวิตช์เช็กอัปเดตแบบตายตัวและต้องใช้ installer ที่เซ็นชื่อ จึงต้องติดตั้ง v2.1.0 ด้วยมือหนึ่งครั้ง ตั้งแต่ 2.0.4 เป็นต้นไป การเช็กตอนเปิดแอปและอัปเดตด้วย SHA-256 จะทำงานปกติ",
     verifyTitle: "ตรวจสอบก่อนรัน",
     verifyBody:
       "เปิด PowerShell ในโฟลเดอร์ Downloads รัน Get-FileHash แล้วเทียบผลลัพธ์กับค่าแฮชทางการ",
