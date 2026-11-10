@@ -342,7 +342,7 @@ const en = {
       },
       {
         q: "Why does auto-update fail when upgrading from v2.0.1–v2.0.3?",
-        a: "Those builds only accept Authenticode-signed installers. The current builds are unsigned, so install v2.1.0 manually once. If the update was already downloaded, run FPSPatcherStudio-v2.1.0-Setup.exe from %TEMP%\\FPSPatcherStudioUpdate. Later updates use the published SHA-256 checksum.",
+        a: "Those builds hard-disable the startup update toggle and only accept Authenticode-signed installers. The current builds are unsigned, so install v2.1.0 manually once. If the update was already downloaded, run FPSPatcherStudio-v2.1.0-Setup.exe from %TEMP%\\FPSPatcherStudioUpdate. Later updates use the published SHA-256 checksum.",
       },
       {
         q: "What does X1T Zilem accept?",
@@ -670,7 +670,7 @@ const th: typeof en = {
       },
       {
         q: "ทำไมอัปเดตอัตโนมัติจาก v2.0.1–v2.0.3 ไม่สำเร็จ?",
-        a: "build เหล่านั้นยอมรับเฉพาะ installer ที่เซ็นชื่อ Authenticode; build ปัจจุบันยังไม่เซ็นชื่อ จึงต้องติดตั้ง v2.1.0 ด้วยมือหนึ่งครั้ง ถ้าดาวน์โหลดไว้แล้ว ให้รัน FPSPatcherStudio-v2.1.0-Setup.exe จาก %TEMP%\\FPSPatcherStudioUpdate หลังจากนั้นระบบจะตรวจ SHA-256 ของ release ให้",
+        a: "build เหล่านั้นปิดสวิตช์เช็กอัปเดตตอนเปิดแอปแบบตายตัว และยอมรับเฉพาะ installer ที่เซ็นชื่อ Authenticode; build ปัจจุบันยังไม่เซ็นชื่อ จึงต้องติดตั้ง v2.1.0 ด้วยมือหนึ่งครั้ง ถ้าดาวน์โหลดไว้แล้ว ให้รัน FPSPatcherStudio-v2.1.0-Setup.exe จาก %TEMP%\\FPSPatcherStudioUpdate หลังจากนั้นระบบจะตรวจ SHA-256 ของ release ให้",
       },
       {
         q: "X1T Zilem รับไฟล์แบบไหน?",
