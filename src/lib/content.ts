@@ -3,26 +3,26 @@ import type { Lang } from "./theme";
 export const RELEASES = {
   fps: {
     name: "FPS Patcher Studio",
-    version: "2.1.0",
+    version: "2.1.1",
     repo: "https://github.com/x1Swimzft/FPS-Patcher-Studio",
     releasePage:
-      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/tag/v2.1.0",
+      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/tag/v2.1.1",
     installer: {
-      file: "FPSPatcherStudio-v2.1.0-Setup.exe",
-      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v2.1.0/FPSPatcherStudio-v2.1.0-Setup.exe",
+      file: "FPSPatcherStudio-v2.1.1-Setup.exe",
+      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v2.1.1/FPSPatcherStudio-v2.1.1-Setup.exe",
       size: "84.3 MB",
-      bytes: 88_441_310,
-      sha: "4a1cdf3f132442f8342f71dc9a3da915fa4bd9f122c3711237b9768e3126619a",
+      bytes: 88_429_724,
+      sha: "439c735cd898f3e2d8a634440260a0a4d01fcdb0fe14395be3e0001b57c08991",
     },
     portable: {
-      file: "FPSPatcherStudio-v2.1.0-win64.zip",
-      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v2.1.0/FPSPatcherStudio-v2.1.0-win64.zip",
+      file: "FPSPatcherStudio-v2.1.1-win64.zip",
+      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v2.1.1/FPSPatcherStudio-v2.1.1-win64.zip",
       size: "117.6 MB",
-      bytes: 123_281_050,
-      sha: "34e94012fd55b0b5630354b108aadfa582daf2307a64b75554134fccbda69143",
+      bytes: 123_284_380,
+      sha: "6871596c015caebfaecc8f1dcd975499042c08e3520205ac0a7ff12c30a2a867",
     },
     checksums:
-      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v2.1.0/FPSPatcherStudio-v2.1.0.sha256",
+      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v2.1.1/FPSPatcherStudio-v2.1.1.sha256",
   },
   ud: {
     name: "Universal Downloader",
@@ -60,7 +60,7 @@ const en = {
     cta: "Download",
   },
   hero: {
-    eyebrow: "FPS v2.1.0 · Downloader v1.0.0 · Windows 10/11",
+    eyebrow: "FPS v2.1.1 · Downloader v1.0.0 · Windows 10/11",
     title: "X1T",
     subtitle:
       "Two desktop tools for people who care about every frame and every file. Reproduce the Zilem container fingerprint without re-encoding a single frame, patch MP4/MOV timing, or build TikTok-ready MPEG-TS. Pull media from 15 sites into one local queue.",
@@ -113,7 +113,7 @@ const en = {
     },
   ],
   fps: {
-    badge: "FPS Patcher Studio · v2.1.0",
+    badge: "FPS Patcher Studio · v2.1.1",
     title: "Fix the timing, not the pixels.",
     lede: "FPS Patcher Studio rewrites MP4 and MOV container headers at the atom level without touching samples. X1T Zilem is the new default: it reproduces the Zilem v1 fingerprint with H.264 video and AAC audio copied unchanged. X1T Remux copies a source H.264 bitstream into MPEG-TS; X1T 60fps and X1T 1080p are lossy re-encodes for AV1/HEVC or arbitrary sources.",
     featuresTitle: "What it does",
@@ -178,7 +178,7 @@ const en = {
         audio: "Copied unchanged, plus 17 silent AAC frames",
         container: "MP4, moov at EOF, two audio tracks",
         mobile: "Video copied",
-        note: "No re-encode. Reproduces the Zilem v1 container fingerprint and writes <stem>_zilem.mp4.",
+        note: "No re-encode. Reproduces the Zilem v1 container fingerprint and writes <stem>_zilem.mp4. Sources with an indeterminate mvhd duration are normalized to a finite value.",
       },
       {
         id: "remux",
@@ -318,7 +318,7 @@ const en = {
       "Windows SmartScreen may show “Windows protected your PC” on first run. That is expected for unsigned installers. Compare the file hash with the value on this page or the release checksum file before launching.",
     updateNoteTitle: "Updating from v2.0.1–v2.0.3?",
     updateNote:
-      "Those builds hard-disable the startup update toggle and require a signed installer. Install v2.1.0 manually once; from 2.0.4 onward, startup checks and SHA-256 updates work normally.",
+      "Those builds hard-disable the startup update toggle and require a signed installer. Install v2.1.1 manually once; from 2.0.4 onward, startup checks and SHA-256 updates work normally.",
     verifyTitle: "Verify before you run",
     verifyBody:
       "Open PowerShell in your Downloads folder, run Get-FileHash, and compare the output with the official hash.",
@@ -345,7 +345,7 @@ const en = {
       },
       {
         q: "Why does auto-update fail when upgrading from v2.0.1–v2.0.3?",
-        a: "Those builds hard-disable the startup update toggle and only accept Authenticode-signed installers. The current builds are unsigned, so install v2.1.0 manually once. If the update was already downloaded, run FPSPatcherStudio-v2.1.0-Setup.exe from %TEMP%\\FPSPatcherStudioUpdate. Later updates use the published SHA-256 checksum.",
+        a: "Those builds hard-disable the startup update toggle and only accept Authenticode-signed installers. The current builds are unsigned, so install v2.1.1 manually once. If the update was already downloaded, run FPSPatcherStudio-v2.1.1-Setup.exe from %TEMP%\\FPSPatcherStudioUpdate. Later updates use the published SHA-256 checksum.",
       },
       {
         q: "What does X1T Zilem accept?",
@@ -391,7 +391,7 @@ const th: typeof en = {
     cta: "ดาวน์โหลด",
   },
   hero: {
-    eyebrow: "FPS v2.1.0 · Downloader v1.0.0 · Windows 10/11",
+    eyebrow: "FPS v2.1.1 · Downloader v1.0.0 · Windows 10/11",
     title: "X1T",
     subtitle:
       "สองเครื่องมือเดสก์ท็อปสำหรับคนที่ใส่ใจทุกเฟรมและทุกไฟล์ สร้างคอนเทนเนอร์ตามลายนิ้วมือ Zilem โดยไม่เข้ารหัสใหม่แม้แต่เฟรมเดียว แพตช์ไทม์มิ่ง MP4/MOV หรือสร้าง MPEG-TS สำหรับ TikTok และดาวน์โหลดสื่อจาก 15 แพลตฟอร์มเข้าคิวเดียวบนเครื่องคุณ",
@@ -444,7 +444,7 @@ const th: typeof en = {
     },
   ],
   fps: {
-    badge: "FPS Patcher Studio · v2.1.0",
+    badge: "FPS Patcher Studio · v2.1.1",
     title: "แก้ไทม์มิ่ง ไม่แตะพิกเซล",
     lede: "FPS Patcher Studio เขียนเฮดเดอร์ MP4/MOV ใหม่ที่ระดับ atom โดยไม่แตะข้อมูลตัวอย่าง X1T Zilem เป็นค่าเริ่มต้นใหม่: สร้างคอนเทนเนอร์ตามลายนิ้วมือ Zilem v1 โดยคัดลอกวิดีโอ H.264 และเสียง AAC ไว้เหมือนเดิม ส่วน X1T Remux คัดลอกบิตสตรีม H.264 ลง MPEG-TS และ X1T 60fps/1080p เป็น re-encode แบบ lossy สำหรับ AV1/HEVC หรือไฟล์ทั่วไป",
     featuresTitle: "ความสามารถหลัก",
@@ -509,7 +509,7 @@ const th: typeof en = {
         audio: "คัดลอกไว้เหมือนเดิม พร้อมเฟรม AAC เงียบ 17 เฟรม",
         container: "MP4, moov อยู่ท้ายไฟล์, แทร็กเสียง 2 แทร็ก",
         mobile: "คัดลอกวิดีโอ",
-        note: "ไม่เข้ารหัสใหม่ สร้างคอนเทนเนอร์ตามลายนิ้วมือ Zilem v1 และเขียนไฟล์ <stem>_zilem.mp4",
+        note: "ไม่เข้ารหัสใหม่ สร้างคอนเทนเนอร์ตามลายนิ้วมือ Zilem v1 และเขียนไฟล์ <stem>_zilem.mp4; ไฟล์ต้นฉบับที่ mvhd เป็นค่าไม่ทราบจะถูกปรับเป็นความยาวจริง",
       },
       {
         id: "remux",
@@ -649,7 +649,7 @@ const th: typeof en = {
       "Windows SmartScreen อาจขึ้น “Windows protected your PC” ในการเปิดครั้งแรก ซึ่งเป็นเรื่องปกติของไฟล์ที่ยังไม่เซ็นชื่อ ให้เทียบค่าแฮชกับค่าบนหน้านี้หรือไฟล์ checksum ของ release ก่อนเปิดใช้งาน",
     updateNoteTitle: "อัปเดตจาก v2.0.1–v2.0.3?",
     updateNote:
-      "build เหล่านั้นปิดสวิตช์เช็กอัปเดตแบบตายตัวและต้องใช้ installer ที่เซ็นชื่อ จึงต้องติดตั้ง v2.1.0 ด้วยมือหนึ่งครั้ง ตั้งแต่ 2.0.4 เป็นต้นไป การเช็กตอนเปิดแอปและอัปเดตด้วย SHA-256 จะทำงานปกติ",
+      "build เหล่านั้นปิดสวิตช์เช็กอัปเดตแบบตายตัวและต้องใช้ installer ที่เซ็นชื่อ จึงต้องติดตั้ง v2.1.1 ด้วยมือหนึ่งครั้ง ตั้งแต่ 2.0.4 เป็นต้นไป การเช็กตอนเปิดแอปและอัปเดตด้วย SHA-256 จะทำงานปกติ",
     verifyTitle: "ตรวจสอบก่อนรัน",
     verifyBody:
       "เปิด PowerShell ในโฟลเดอร์ Downloads รัน Get-FileHash แล้วเทียบผลลัพธ์กับค่าแฮชทางการ",
@@ -676,7 +676,7 @@ const th: typeof en = {
       },
       {
         q: "ทำไมอัปเดตอัตโนมัติจาก v2.0.1–v2.0.3 ไม่สำเร็จ?",
-        a: "build เหล่านั้นปิดสวิตช์เช็กอัปเดตตอนเปิดแอปแบบตายตัว และยอมรับเฉพาะ installer ที่เซ็นชื่อ Authenticode; build ปัจจุบันยังไม่เซ็นชื่อ จึงต้องติดตั้ง v2.1.0 ด้วยมือหนึ่งครั้ง ถ้าดาวน์โหลดไว้แล้ว ให้รัน FPSPatcherStudio-v2.1.0-Setup.exe จาก %TEMP%\\FPSPatcherStudioUpdate หลังจากนั้นระบบจะตรวจ SHA-256 ของ release ให้",
+        a: "build เหล่านั้นปิดสวิตช์เช็กอัปเดตตอนเปิดแอปแบบตายตัว และยอมรับเฉพาะ installer ที่เซ็นชื่อ Authenticode; build ปัจจุบันยังไม่เซ็นชื่อ จึงต้องติดตั้ง v2.1.1 ด้วยมือหนึ่งครั้ง ถ้าดาวน์โหลดไว้แล้ว ให้รัน FPSPatcherStudio-v2.1.1-Setup.exe จาก %TEMP%\\FPSPatcherStudioUpdate หลังจากนั้นระบบจะตรวจ SHA-256 ของ release ให้",
       },
       {
         q: "X1T Zilem รับไฟล์แบบไหน?",

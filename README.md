@@ -57,7 +57,7 @@ Without it, Next falls back to `http://localhost:3000` for metadata only.
 ## Content rules
 
 - Only claims from the two repositories' README/docs.
-- `v2.1.0` for FPS Patcher Studio, `v1.0.0` for Universal Downloader.
+- `v2.1.1` for FPS Patcher Studio, `v1.0.0` for Universal Downloader.
 - Builds are unsigned. The downloads section says so and publishes the real
   SHA-256 values.
 - No fake reviews, API snippets, benchmark numbers, or "guaranteed bypass"
@@ -75,7 +75,7 @@ Without it, Next falls back to `http://localhost:3000` for metadata only.
 
 ## Screenshots
 
-FPS Patcher Studio (v2.1.0, Crimson Gamer, dark, English):
+FPS Patcher Studio (v2.1.1, Crimson Gamer, dark, English):
 
 ```powershell
 cd ..\fps-patcher-studio
