@@ -57,11 +57,13 @@ Without it, Next falls back to `http://localhost:3000` for metadata only.
 ## Content rules
 
 - Only claims from the two repositories' README/docs.
-- `v2.0.4` for FPS Patcher Studio, `v1.0.0` for Universal Downloader.
+- `v2.1.0` for FPS Patcher Studio, `v1.0.0` for Universal Downloader.
 - Builds are unsigned. The downloads section says so and publishes the real
   SHA-256 values.
 - No fake reviews, API snippets, benchmark numbers, or "guaranteed bypass"
   claims.
+- `X1T Zilem` copies H.264 video and AAC audio without re-encoding; it only
+  accepts a non-fragmented H.264 MP4 with AAC-LC 48 kHz stereo.
 - `X1T Remux` copies the H.264 video bitstream and re-encodes audio only;
   `X1T 60fps` and `X1T 1080p` are lossy re-encodes. Do not call every preset
   lossless.
@@ -73,7 +75,7 @@ Without it, Next falls back to `http://localhost:3000` for metadata only.
 
 ## Screenshots
 
-FPS Patcher Studio (v2.0.4, Crimson Gamer, dark, English):
+FPS Patcher Studio (v2.1.0, Crimson Gamer, dark, English):
 
 ```powershell
 cd ..\fps-patcher-studio

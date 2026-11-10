@@ -3,26 +3,26 @@ import type { Lang } from "./theme";
 export const RELEASES = {
   fps: {
     name: "FPS Patcher Studio",
-    version: "2.0.4",
+    version: "2.1.0",
     repo: "https://github.com/x1Swimzft/FPS-Patcher-Studio",
     releasePage:
-      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/tag/v2.0.4",
+      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/tag/v2.1.0",
     installer: {
-      file: "FPSPatcherStudio-v2.0.4-Setup.exe",
-      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v2.0.4/FPSPatcherStudio-v2.0.4-Setup.exe",
+      file: "FPSPatcherStudio-v2.1.0-Setup.exe",
+      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v2.1.0/FPSPatcherStudio-v2.1.0-Setup.exe",
       size: "84.3 MB",
-      bytes: 88_407_137,
-      sha: "eb7b487f552b7871f8190ddeedc4f4ff56ea9e8063758e6af10057a45b27f788",
+      bytes: 88_441_310,
+      sha: "4a1cdf3f132442f8342f71dc9a3da915fa4bd9f122c3711237b9768e3126619a",
     },
     portable: {
-      file: "FPSPatcherStudio-v2.0.4-win64.zip",
-      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v2.0.4/FPSPatcherStudio-v2.0.4-win64.zip",
-      size: "117.5 MB",
-      bytes: 123_253_698,
-      sha: "e9ecad2712c19d1dc7a6e1038d69756e886644c2756de666b24e23b911e7d6a7",
+      file: "FPSPatcherStudio-v2.1.0-win64.zip",
+      url: "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v2.1.0/FPSPatcherStudio-v2.1.0-win64.zip",
+      size: "117.6 MB",
+      bytes: 123_281_050,
+      sha: "34e94012fd55b0b5630354b108aadfa582daf2307a64b75554134fccbda69143",
     },
     checksums:
-      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v2.0.4/FPSPatcherStudio-v2.0.4.sha256",
+      "https://github.com/x1Swimzft/FPS-Patcher-Studio/releases/download/v2.1.0/FPSPatcherStudio-v2.1.0.sha256",
   },
   ud: {
     name: "Universal Downloader",
@@ -60,10 +60,10 @@ const en = {
     cta: "Download",
   },
   hero: {
-    eyebrow: "FPS v2.0.4 · Downloader v1.0.0 · Windows 10/11",
+    eyebrow: "FPS v2.1.0 · Downloader v1.0.0 · Windows 10/11",
     title: "X1T",
     subtitle:
-      "Two desktop tools for people who care about every frame and every file. Patch MP4/MOV container timing without re-encoding, or build TikTok-ready MPEG-TS with X1T Remux and lossy re-encodes. Pull media from 15 sites into one local queue.",
+      "Two desktop tools for people who care about every frame and every file. Reproduce the Zilem container fingerprint without re-encoding a single frame, patch MP4/MOV timing, or build TikTok-ready MPEG-TS. Pull media from 15 sites into one local queue.",
     primary: "Download for Windows",
     secondary: "Explore the apps",
     trust: "No telemetry · No uploads · MIT source",
@@ -71,8 +71,8 @@ const en = {
   stats: [
     {
       value: "Lossless",
-      label: "video remux",
-      desc: "X1T Remux copies the H.264 bitstream; the 60fps/1080p presets are clearly marked lossy re-encodes.",
+      label: "container patch",
+      desc: "X1T Zilem copies H.264 video and AAC audio unchanged; X1T Remux copies the H.264 bitstream.",
     },
     {
       value: "<30 MB",
@@ -97,9 +97,9 @@ const en = {
   tools: [
     {
       name: "FPS Patcher Studio",
-      tagline: "MP4/MOV timing + TikTok TS presets",
-      body: "Rewrite MP4/MOV container headers without touching samples, or produce TikTok-ready MPEG-TS with X1T Remux and lossy H.264/AAC presets.",
-      chips: ["X1T Remux", "Auto-update", "CLI"],
+      tagline: "Container-only MP4 + TikTok TS presets",
+      body: "Reproduce the Zilem container fingerprint without re-encoding, or produce TikTok-ready MPEG-TS with X1T Remux and lossy H.264/AAC presets.",
+      chips: ["X1T Zilem", "Auto-update", "CLI"],
       explore: "Explore FPS Patcher",
       download: "Download",
     },
@@ -113,22 +113,22 @@ const en = {
     },
   ],
   fps: {
-    badge: "FPS Patcher Studio · v2.0.4",
+    badge: "FPS Patcher Studio · v2.1.0",
     title: "Fix the timing, not the pixels.",
-    lede: "FPS Patcher Studio rewrites MP4 and MOV container headers at the atom level without touching samples. For TikTok-style MPEG-TS, X1T Remux copies an existing H.264 bitstream and re-encodes only audio; X1T 60fps and X1T 1080p are lossy re-encodes for AV1/HEVC or arbitrary sources.",
+    lede: "FPS Patcher Studio rewrites MP4 and MOV container headers at the atom level without touching samples. X1T Zilem is the new default: it reproduces the Zilem v1 fingerprint with H.264 video and AAC audio copied unchanged. X1T Remux copies a source H.264 bitstream into MPEG-TS; X1T 60fps and X1T 1080p are lossy re-encodes for AV1/HEVC or arbitrary sources.",
     featuresTitle: "What it does",
     features: [
       {
         title: "Bit-exact by design",
-        desc: "MP4/MOV atoms are rewritten; the mdat payload is preserved bit-for-bit. X1T Remux also copies the H.264 bitstream.",
+        desc: "Zilem and the original container presets rewrite the container; the video and audio payloads are preserved bit-for-bit. X1T Remux also copies the H.264 bitstream.",
       },
       {
-        title: "X1T presets",
-        desc: "X1T Remux (default), X1T 60fps and X1T 1080p. Remux preserves the source video; the re-encode presets are lossy.",
+        title: "Zilem-first presets",
+        desc: "X1T Zilem (default) takes a non-fragmented H.264 MP4 with AAC-LC 48 kHz stereo. X1T Remux, X1T 60fps and X1T 1080p cover MPEG-TS.",
       },
       {
         title: "Six-gate verification",
-        desc: "MP4/MOV: chunk offsets, sample tables, playback metadata, Rec.709 color, mdat SHA-256 and audio. TS presets check sync, codec, frame rate and duration.",
+        desc: "Zilem checks box order, the free-box conversion, mdat hashes, the silence tail, audio tracks and its tag. Other MP4/MOV output checks offsets, sample tables, playback metadata, Rec.709 color, mdat SHA-256 and audio; TS presets check sync, codec, frame rate and duration.",
       },
       {
         title: "Batch queue",
@@ -160,7 +160,7 @@ const en = {
       },
     ],
     presetsTitle: "X1T presets",
-    presetsHint: "Pick a preset. X1T Remux preserves the source H.264 bitstream; X1T 60fps and 1080p re-encode for other sources.",
+    presetsHint: "Pick a preset. X1T Zilem is container-only; X1T Remux copies the H.264 bitstream; X1T 60fps and 1080p re-encode for other sources.",
     presetLabels: {
       target: "Target",
       audio: "Audio",
@@ -171,9 +171,19 @@ const en = {
     openShot: "Open full size",
     presets: [
       {
+        id: "zilem",
+        name: "X1T Zilem",
+        badge: "Default",
+        target: "Non-fragmented H.264 MP4 with AAC-LC 48 kHz stereo",
+        audio: "Copied unchanged, plus 17 silent AAC frames",
+        container: "MP4, moov at EOF, two audio tracks",
+        mobile: "Video copied",
+        note: "No re-encode. Reproduces the Zilem v1 container fingerprint and writes <stem>_zilem.mp4.",
+      },
+      {
         id: "remux",
         name: "X1T Remux",
-        badge: "Default",
+        badge: "MPEG-TS",
         target: "Already-H.264 1080p60 source",
         audio: "Re-encoded to AAC 128k, 48 kHz stereo",
         container: "MPEG-TS, .mp4 extension",
@@ -201,7 +211,7 @@ const en = {
         note: "Lossy H.264 re-encode with letterboxing. Requires Windows Media Foundation.",
       },
     ],
-    gatesTitle: "Six gates for MP4/MOV; TS presets use their own check",
+    gatesTitle: "Six gates for container patches; TS presets use their own check",
     gates: [
       { name: "chunk offsets", desc: "stco / co64 boundaries and faststart layout" },
       { name: "sample tables", desc: "stts / ctts timing validity" },
@@ -212,11 +222,11 @@ const en = {
     ],
     cliTitle: "Headless when you need it",
     cliLabel: "Run from PowerShell or cmd",
-    cli: 'FPSPatcherStudio.exe --cli patch "clip.mp4" --preset 60 --strategy tiktok-ts-remux --output out --json',
+    cli: 'FPSPatcherStudio.exe --cli patch "clip.mp4" --output out --json',
     copy: "Copy command",
     copied: "Copied",
     disclaimer:
-      "X1T Remux does not re-encode video; X1T 60fps and X1T 1080p are lossy re-encodes. Container timing does not create new frames, and platform ingest behavior can change without notice. TikTok upload behavior is not guaranteed.",
+      "X1T Zilem copies video and audio without re-encoding; X1T Remux copies video and re-encodes audio; X1T 60fps and X1T 1080p are lossy re-encodes. Container timing does not create new frames, and platform ingest behavior can change without notice. TikTok upload behavior is not guaranteed.",
     shotsTitle: "Inside the app",
     shots: [
       { id: "queue", label: "Batch queue", caption: "Queue with per-item overrides and verification state." },
@@ -332,11 +342,15 @@ const en = {
       },
       {
         q: "Why does auto-update fail when upgrading from v2.0.1–v2.0.3?",
-        a: "Those builds only accept Authenticode-signed installers. The current builds are unsigned, so install v2.0.4 manually once. If the update was already downloaded, run FPSPatcherStudio-v2.0.4-Setup.exe from %TEMP%\\FPSPatcherStudioUpdate. Later updates use the published SHA-256 checksum.",
+        a: "Those builds only accept Authenticode-signed installers. The current builds are unsigned, so install v2.1.0 manually once. If the update was already downloaded, run FPSPatcherStudio-v2.1.0-Setup.exe from %TEMP%\\FPSPatcherStudioUpdate. Later updates use the published SHA-256 checksum.",
+      },
+      {
+        q: "What does X1T Zilem accept?",
+        a: "A non-fragmented MP4 with one H.264 video track and one AAC-LC 48 kHz stereo audio track. Fragmented MP4, multiple tracks, HEVC/AV1/VP9 video, non-AAC audio, and non-48 kHz or non-stereo audio are rejected before an output is written.",
       },
       {
         q: "Does FPS Patcher re-encode my video?",
-        a: "X1T Remux copies an existing H.264 bitstream without re-encoding video. X1T 60fps and X1T 1080p are lossy H.264/AAC re-encodes for AV1/HEVC or arbitrary sources. The legacy X1T presets are container-only patches.",
+        a: "X1T Zilem copies H.264 video and AAC audio without re-encoding, adding only container structure and 17 silent frames. X1T Remux copies H.264 video and re-encodes audio. X1T 60fps and X1T 1080p are lossy H.264/AAC re-encodes for AV1/HEVC or arbitrary sources. The legacy X1T presets are container-only patches.",
       },
       {
         q: "Does Universal Downloader bypass DRM?",
@@ -374,10 +388,10 @@ const th: typeof en = {
     cta: "ดาวน์โหลด",
   },
   hero: {
-    eyebrow: "FPS v2.0.4 · Downloader v1.0.0 · Windows 10/11",
+    eyebrow: "FPS v2.1.0 · Downloader v1.0.0 · Windows 10/11",
     title: "X1T",
     subtitle:
-      "สองเครื่องมือเดสก์ท็อปสำหรับคนที่ใส่ใจทุกเฟรมและทุกไฟล์ แพตช์ไทม์มิ่ง MP4/MOV โดยไม่เรนเดอร์ใหม่ หรือสร้าง MPEG-TS สำหรับ TikTok ด้วย X1T Remux และพรีเซ็ต re-encode และดาวน์โหลดสื่อจาก 15 แพลตฟอร์มเข้าคิวเดียวบนเครื่องคุณ",
+      "สองเครื่องมือเดสก์ท็อปสำหรับคนที่ใส่ใจทุกเฟรมและทุกไฟล์ สร้างคอนเทนเนอร์ตามลายนิ้วมือ Zilem โดยไม่เข้ารหัสใหม่แม้แต่เฟรมเดียว แพตช์ไทม์มิ่ง MP4/MOV หรือสร้าง MPEG-TS สำหรับ TikTok และดาวน์โหลดสื่อจาก 15 แพลตฟอร์มเข้าคิวเดียวบนเครื่องคุณ",
     primary: "ดาวน์โหลดสำหรับ Windows",
     secondary: "ดูรายละเอียดแอป",
     trust: "ไม่เก็บ telemetry · ไม่อัปโหลดไฟล์ · ซอร์ส MIT",
@@ -385,8 +399,8 @@ const th: typeof en = {
   stats: [
     {
       value: "Lossless",
-      label: "รีมักซ์วิดีโอ",
-      desc: "X1T Remux คัดลอกบิตสตรีม H.264; พรีเซ็ต 60fps/1080p เป็น re-encode แบบ lossy ที่ระบุชัดเจน",
+      label: "แพตช์คอนเทนเนอร์",
+      desc: "X1T Zilem คัดลอกวิดีโอ H.264 และเสียง AAC ไว้เหมือนเดิม; X1T Remux คัดลอกบิตสตรีม H.264",
     },
     {
       value: "<30 MB",
@@ -411,9 +425,9 @@ const th: typeof en = {
   tools: [
     {
       name: "FPS Patcher Studio",
-      tagline: "แพตช์ไทม์มิ่ง MP4/MOV + พรีเซ็ต TikTok TS",
-      body: "เขียนโครงสร้างคอนเทนเนอร์ MP4/MOV ใหม่โดยไม่แตะข้อมูลตัวอย่าง หรือสร้าง MPEG-TS สำหรับ TikTok ด้วย X1T Remux และพรีเซ็ต H.264/AAC แบบ lossy",
-      chips: ["X1T Remux", "อัปเดตอัตโนมัติ", "CLI"],
+      tagline: "คอนเทนเนอร์ MP4 + พรีเซ็ต TikTok TS",
+      body: "สร้างคอนเทนเนอร์ตามลายนิ้วมือ Zilem โดยไม่เข้ารหัสใหม่ หรือสร้าง MPEG-TS สำหรับ TikTok ด้วย X1T Remux และพรีเซ็ต H.264/AAC แบบ lossy",
+      chips: ["X1T Zilem", "อัปเดตอัตโนมัติ", "CLI"],
       explore: "ดู FPS Patcher",
       download: "ดาวน์โหลด",
     },
@@ -427,22 +441,22 @@ const th: typeof en = {
     },
   ],
   fps: {
-    badge: "FPS Patcher Studio · v2.0.4",
+    badge: "FPS Patcher Studio · v2.1.0",
     title: "แก้ไทม์มิ่ง ไม่แตะพิกเซล",
-    lede: "FPS Patcher Studio เขียนเฮดเดอร์ MP4/MOV ใหม่ที่ระดับ atom โดยไม่แตะข้อมูลตัวอย่าง สำหรับ MPEG-TS สไตล์ TikTok นั้น X1T Remux คัดลอกบิตสตรีม H.264 เดิมและแปลงเฉพาะเสียง ส่วน X1T 60fps และ X1T 1080p เป็น re-encode แบบ lossy สำหรับ AV1/HEVC หรือไฟล์ทั่วไป",
+    lede: "FPS Patcher Studio เขียนเฮดเดอร์ MP4/MOV ใหม่ที่ระดับ atom โดยไม่แตะข้อมูลตัวอย่าง X1T Zilem เป็นค่าเริ่มต้นใหม่: สร้างคอนเทนเนอร์ตามลายนิ้วมือ Zilem v1 โดยคัดลอกวิดีโอ H.264 และเสียง AAC ไว้เหมือนเดิม ส่วน X1T Remux คัดลอกบิตสตรีม H.264 ลง MPEG-TS และ X1T 60fps/1080p เป็น re-encode แบบ lossy สำหรับ AV1/HEVC หรือไฟล์ทั่วไป",
     featuresTitle: "ความสามารถหลัก",
     features: [
       {
         title: "bit-exact ตั้งแต่ต้น",
-        desc: "เขียน atom ของ MP4/MOV ใหม่ แต่ข้อมูล mdat ยังคงเดิมทุกบิต; X1T Remux คัดลอกบิตสตรีม H.264 เช่นกัน",
+        desc: "Zilem และพรีเซ็ตคอนเทนเนอร์เดิมเขียนเฉพาะโครงสร้างคอนเทนเนอร์ โดยข้อมูลวิดีโอและเสียงยังคงเดิมทุกบิต; X1T Remux คัดลอกบิตสตรีม H.264 เช่นกัน",
       },
       {
-        title: "พรีเซ็ต X1T",
-        desc: "X1T Remux (ค่าเริ่มต้น), X1T 60fps และ X1T 1080p — Remux คงวิดีโอต้นฉบับ ส่วนพรีเซ็ต re-encode เป็น lossy",
+        title: "พรีเซ็ตที่เริ่มจาก Zilem",
+        desc: "X1T Zilem (ค่าเริ่มต้น) รับ MP4 แบบไม่ fragmented ที่มี H.264 และ AAC-LC 48 kHz stereo ส่วน X1T Remux, X1T 60fps และ X1T 1080p ใช้กับ MPEG-TS",
       },
       {
         title: "ตรวจ 6 ด่าน",
-        desc: "MP4/MOV: chunk offsets, sample tables, playback metadata, สี Rec.709, SHA-256 ของ mdat และเสียง; พรีเซ็ต TS ตรวจ sync, codec, frame rate และ duration",
+        desc: "Zilem ตรวจลำดับ box, การแปลงเป็น free, SHA ของ mdat, silence tail, แทร็กเสียง และแท็กของตัวเอง; ไฟล์ MP4/MOV อื่นตรวจ offsets, sample tables, playback metadata, สี Rec.709, SHA-256 ของ mdat และเสียง; พรีเซ็ต TS ตรวจ sync, codec, frame rate และ duration",
       },
       {
         title: "คิวแบบแบตช์",
@@ -474,7 +488,7 @@ const th: typeof en = {
       },
     ],
     presetsTitle: "พรีเซ็ต X1T",
-    presetsHint: "เลือกพรีเซ็ต — X1T Remux คงบิตสตรีม H.264 เดิม; X1T 60fps/1080p เป็น re-encode สำหรับไฟล์อื่น",
+    presetsHint: "เลือกพรีเซ็ต — X1T Zilem เป็นคอนเทนเนอร์เท่านั้น; X1T Remux คัดลอกบิตสตรีม H.264; X1T 60fps/1080p เป็น re-encode สำหรับไฟล์อื่น",
     presetLabels: {
       target: "ปลายทาง",
       audio: "เสียง",
@@ -485,9 +499,19 @@ const th: typeof en = {
     openShot: "เปิดภาพเต็ม",
     presets: [
       {
+        id: "zilem",
+        name: "X1T Zilem",
+        badge: "ค่าเริ่มต้น",
+        target: "MP4 แบบไม่ fragmented ที่มี H.264 และ AAC-LC 48 kHz stereo",
+        audio: "คัดลอกไว้เหมือนเดิม พร้อมเฟรม AAC เงียบ 17 เฟรม",
+        container: "MP4, moov อยู่ท้ายไฟล์, แทร็กเสียง 2 แทร็ก",
+        mobile: "คัดลอกวิดีโอ",
+        note: "ไม่เข้ารหัสใหม่ สร้างคอนเทนเนอร์ตามลายนิ้วมือ Zilem v1 และเขียนไฟล์ <stem>_zilem.mp4",
+      },
+      {
         id: "remux",
         name: "X1T Remux",
-        badge: "ค่าเริ่มต้น",
+        badge: "MPEG-TS",
         target: "ไฟล์ต้นฉบับ H.264 1080p60",
         audio: "แปลงเสียงเป็น AAC 128k, 48 kHz stereo",
         container: "MPEG-TS นามสกุล .mp4",
@@ -515,7 +539,7 @@ const th: typeof en = {
         note: "เข้ารหัส H.264 ใหม่แบบ lossy พร้อม letterbox ต้องใช้ Windows Media Foundation",
       },
     ],
-    gatesTitle: "หกด่านสำหรับ MP4/MOV; พรีเซ็ต TS ใช้การตรวจของตัวเอง",
+    gatesTitle: "หกด่านสำหรับแพตช์คอนเทนเนอร์; พรีเซ็ต TS ใช้การตรวจของตัวเอง",
     gates: [
       { name: "chunk offsets", desc: "ขอบเขต stco / co64 และ layout แบบ faststart" },
       { name: "sample tables", desc: "ความถูกต้องของ stts / ctts" },
@@ -526,11 +550,11 @@ const th: typeof en = {
     ],
     cliTitle: "ใช้แบบ headless เมื่อต้องการ",
     cliLabel: "รันจาก PowerShell หรือ cmd",
-    cli: 'FPSPatcherStudio.exe --cli patch "clip.mp4" --preset 60 --strategy tiktok-ts-remux --output out --json',
+    cli: 'FPSPatcherStudio.exe --cli patch "clip.mp4" --output out --json',
     copy: "คัดลอกคำสั่ง",
     copied: "คัดลอกแล้ว",
     disclaimer:
-      "X1T Remux ไม่เข้ารหัสวิดีโอใหม่; X1T 60fps และ 1080p เป็น re-encode แบบ lossy การแก้ไทม์มิ่งไม่ได้สร้างเฟรมใหม่ และพฤติกรรมของแพลตฟอร์มอาจเปลี่ยนได้โดยไม่แจ้งล่วงหน้า ไม่รับประกันพฤติกรรมการอัปโหลด TikTok",
+      "X1T Zilem คัดลอกวิดีโอและเสียงโดยไม่เข้ารหัสใหม่; X1T Remux คัดลอกวิดีโอและแปลงเสียง; X1T 60fps และ 1080p เป็น re-encode แบบ lossy การแก้ไทม์มิ่งไม่ได้สร้างเฟรมใหม่ และพฤติกรรมของแพลตฟอร์มอาจเปลี่ยนได้โดยไม่แจ้งล่วงหน้า ไม่รับประกันพฤติกรรมการอัปโหลด TikTok",
     shotsTitle: "ภายในแอป",
     shots: [
       { id: "queue", label: "คิวแบตช์", caption: "คิวพร้อมตัวเลือกต่อไฟล์และสถานะการตรวจสอบ" },
@@ -646,11 +670,15 @@ const th: typeof en = {
       },
       {
         q: "ทำไมอัปเดตอัตโนมัติจาก v2.0.1–v2.0.3 ไม่สำเร็จ?",
-        a: "build เหล่านั้นยอมรับเฉพาะ installer ที่เซ็นชื่อ Authenticode; build ปัจจุบันยังไม่เซ็นชื่อ จึงต้องติดตั้ง v2.0.4 ด้วยมือหนึ่งครั้ง ถ้าดาวน์โหลดไว้แล้ว ให้รัน FPSPatcherStudio-v2.0.4-Setup.exe จาก %TEMP%\\FPSPatcherStudioUpdate หลังจากนั้นระบบจะตรวจ SHA-256 ของ release ให้",
+        a: "build เหล่านั้นยอมรับเฉพาะ installer ที่เซ็นชื่อ Authenticode; build ปัจจุบันยังไม่เซ็นชื่อ จึงต้องติดตั้ง v2.1.0 ด้วยมือหนึ่งครั้ง ถ้าดาวน์โหลดไว้แล้ว ให้รัน FPSPatcherStudio-v2.1.0-Setup.exe จาก %TEMP%\\FPSPatcherStudioUpdate หลังจากนั้นระบบจะตรวจ SHA-256 ของ release ให้",
+      },
+      {
+        q: "X1T Zilem รับไฟล์แบบไหน?",
+        a: "MP4 แบบไม่ fragmented ที่มีแทร็กวิดีโอ H.264 หนึ่งแทร็กและเสียง AAC-LC 48 kHz stereo หนึ่งแทร็ก ไฟล์ fragmented, หลายแทร็ก, วิดีโอ HEVC/AV1/VP9, เสียงที่ไม่ใช่ AAC และเสียงที่ไม่ใช่ 48 kHz หรือไม่ใช่ stereo จะถูกปฏิเสธก่อนเขียนไฟล์",
       },
       {
         q: "FPS Patcher เข้ารหัสวิดีโอใหม่ไหม?",
-        a: "X1T Remux คัดลอกบิตสตรีม H.264 เดิมโดยไม่เข้ารหัสวิดีโอใหม่ ส่วน X1T 60fps และ X1T 1080p เป็น re-encode H.264/AAC แบบ lossy สำหรับ AV1/HEVC หรือไฟล์ทั่วไป พรีเซ็ต X1T เดิมเป็นการแพตช์คอนเทนเนอร์เท่านั้น",
+        a: "X1T Zilem คัดลอกวิดีโอ H.264 และเสียง AAC โดยไม่เข้ารหัสใหม่ เพิ่มเฉพาะโครงสร้างคอนเทนเนอร์และเฟรมเงียบ 17 เฟรม ส่วน X1T Remux คัดลอกวิดีโอ H.264 และแปลงเสียงใหม่ X1T 60fps และ X1T 1080p เป็น re-encode H.264/AAC แบบ lossy สำหรับ AV1/HEVC หรือไฟล์ทั่วไป พรีเซ็ต X1T เดิมเป็นการแพตช์คอนเทนเนอร์เท่านั้น",
       },
       {
         q: "Universal Downloader หลบ DRM ไหม?",

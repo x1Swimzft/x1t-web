@@ -32,7 +32,7 @@ export function FpsSection({ lang }: FpsSectionProps) {
   const copy = getCopy(lang).fps;
   const shared = getCopy(lang).downloads;
   const [shot, setShot] = useState(0);
-  const [preset, setPreset] = useState(copy.presets[0]?.id ?? "remux");
+  const [preset, setPreset] = useState(copy.presets[0]?.id ?? "zilem");
   const [copied, setCopied] = useState(false);
 
   const activeShot = SHOTS[shot] ?? SHOTS[0];
